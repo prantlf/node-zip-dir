@@ -1,4 +1,4 @@
-# zip-dir
+# @prantlf/zip-dir
 [![NPM version](https://badge.fury.io/js/%40prantlf%2Fzip-dir.png)](http://badge.fury.io/js/%40prantlf%2Fzip-dir)
 [![Build Status](https://travis-ci.org/prantlf/node-zip-dir.png)](https://travis-ci.org/prantlf/node-zip-dir)
 [![codecov](https://codecov.io/gh/prantlf/node-zip-dir/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/node-zip-dir)
@@ -6,6 +6,12 @@
 [![devDependency Status](https://david-dm.org/prantlf/node-zip-dir/dev-status.svg)](https://david-dm.org/prantlf/node-zip-dir#info=devDependencies)
 
 Zips up a directory and saves the zip archive to disk or returns as a buffer.
+
+This fork enhances the original project with the following functionality:
+
+* Depends on the most recent versions of [`jszip`] and other packages.
+* Supports both callback and [`Promise`] to notify about the finished work.
+* Offers extra parameters `rootPath`, `comment` and `compressionLevel`.
 
 ## install
 
@@ -64,7 +70,7 @@ been saved to disk.
 
 * `rootPath` Folder path to create in the root of the zip file and place the input files and folder below it. Input files and folders will be placed directly to the zip file root by default.
 * `saveTo` A path to save the buffer to.
-* `filter` A function that is called for all items to determine whether or not they should be added to the zip buffer. Function is called with the `fullPath` and a `stats` object ([fs.Stats](http://nodejs.org/api/fs.html#fs_class_fs_stats)). Return true to add the item; false otherwise. To include files within directories, directories must also pass this filter.
+* `filter` A function that is called for all items to determine whether or not they should be added to the zip buffer. Function is called with the `fullPath` and a `stats` object ([fs.Stats]). Return true to add the item; false otherwise. To include files within directories, directories must also pass this filter.
 * `each` A function that is called everytime a file or directory is added to the zip.
 * `comment` A comment to be stored to the zip file.
 * `compressionLevel` The level of compression to use. A number from 1 (best speed) and 9 (best compression). 6 is the default.
@@ -76,3 +82,7 @@ been saved to disk.
 ## license
 
 MIT
+
+[`jszip`]: https://www.npmjs.com/package/jszip
+[`Promise`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+[fs.Stats]: http://nodejs.org/api/fs.html#fs_class_fs_stats
