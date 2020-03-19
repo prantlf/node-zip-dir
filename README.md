@@ -16,13 +16,13 @@ This fork enhances the original project with the following functionality:
 ## install
 
 ```
-$ npm install zip-dir
+$ npm install @prantlf/zip-dir
 ```
 
 ## example
 
 ```javascript
-var zipdir = require('zip-dir');
+var zipdir = require('@prantlf/zip-dir');
 
 // `buffer` is the buffer of the zipped file
 var buffer = await zipdir('/path/to/be/zipped');
@@ -57,7 +57,7 @@ zipdir('/path/to/be/zipped', { each: path => console.log(p, "added!"), function 
 ## methods
 
 ```
-var zipdir = require('zip-dir');
+var zipdir = require('@prantlf/zip-dir');
 ```
 
 ### zipdir(dirPath, [options], [callback]) : [Promise]
