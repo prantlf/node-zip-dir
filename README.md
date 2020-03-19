@@ -1,9 +1,11 @@
 # zip-dir
+[![NPM version](https://badge.fury.io/js/%40prantlf%2Fastrobench.png)](http://badge.fury.io/js/%40prantlf%2Fastrobench)
+[![Build Status](https://travis-ci.org/prantlf/node-zip-dir.png)](https://travis-ci.org/prantlf/node-zip-dir)
+[![codecov](https://codecov.io/gh/prantlf/node-zip-dir/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/node-zip-dir)
+[![Dependency Status](https://david-dm.org/prantlf/node-zip-dir.svg)](https://david-dm.org/prantlf/node-zip-dir)
+[![devDependency Status](https://david-dm.org/prantlf/node-zip-dir/dev-status.svg)](https://david-dm.org/prantlf/node-zip-dir#info=devDependencies)
 
-Zips up a directory and saves the zip to disk or returns as a buffer.
-
-[![Build Status](http://img.shields.io/travis/jsantell/node-zip-dir.svg?style=flat-square)](https://travis-ci.org/jsantell/node-zip-dir)
-[![Build Status](http://img.shields.io/npm/v/zip-dir.svg?style=flat-square)](https://www.npmjs.org/package/zip-dir)
+Zips up a directory and saves the zip archive to disk or returns as a buffer.
 
 ## install
 

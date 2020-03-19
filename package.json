@@ -1,26 +1,66 @@
 {
-  "name": "zip-dir",
-  "version": "1.0.2",
-  "description": "Zips up directories into buffers or saves zipped files to disk",
-  "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec --ui bdd"
+  "name": "@prantlf/node-zip-dir",
+  "version": "1.0.0",
+  "description": "Zips up a directory and saves the zip archive to disk or returns as a buffer.",
+  "homepage": "https://github.com/prantlf/node-zip-dir",
+  "author": {
+    "name": "Ferdinand Prantl",
+    "email": "prantlf@gmail.com",
+    "url": "http://prantl.tk"
   },
+  "contributors": [
+    "Jordan Santell"
+  ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/jsantell/node-zip-dir"
+    "url": "https://github.com/prantlf/node-zip-dir.git"
   },
-  "author": "Jordan Santell",
-  "devDependencies": {
-    "mocha": "*",
-    "chai": "*",
-    "buffer-equal": "*",
-    "unzip": "*",
-    "fs-extra": "*"
+  "bugs": {
+    "url": "https://github.com/prantlf/node-zip-dir/issues"
   },
   "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/prantlf/node-zip-dir/blob/master/LICENSE"
+    }
+  ],
+  "main": "index",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "nyc mocha --reporter spec --ui bdd"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "branches": 80,
+    "lines": 80,
+    "functions": 80,
+    "statements": 80
+  },
+  "keywords": [
+    "zip",
+    "pack",
+    "archive",
+    "directory"
+  ],
   "dependencies": {
-    "jszip": "^3.2.2",
-    "async": "^3.2.0"
+    "jszip": "3.2.2",
+    "async": "3.2.0"
+  },
+  "devDependencies": {
+    "buffer-equal": "1.0.0",
+    "chai": "4.2.0",
+    "fs-extra": "8.1.0",
+    "mocha": "7.1.1",
+    "nyc": "15.0.0",
+    "unzip": "0.1.11"
   }
 }
