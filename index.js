@@ -51,7 +51,11 @@ function zipBuffer (rootDir, options, callback) {
 
     zip.generateAsync({
       compression: 'DEFLATE',
-      type: 'nodebuffer'
+      type: 'nodebuffer',
+      comment: options.comment,
+      compressionOptions: {
+        level: options.compressionLevel
+      }
     }).then(function (buffer) {
       callback(null, buffer);
     }).catch(function (error) {
