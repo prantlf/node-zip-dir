@@ -11,7 +11,7 @@ This fork enhances the original project with the following functionality:
 
 * Depends on the most recent versions of [`jszip`] and other packages.
 * Supports both callback and [`Promise`] to notify about the finished work.
-* Offers extra parameters `rootPath`, `comment` and `compressionLevel`.
+* Offers extra parameters `rootPath`, `comment`, `compressionLevel`, `omitEmptyDirs` and `allowEmptyRoot`.
 
 ## install
 
@@ -74,10 +74,8 @@ been saved to disk.
 * `each` A function that is called everytime a file or directory is added to the zip.
 * `comment` A comment to be stored to the zip file.
 * `compressionLevel` The level of compression to use. A number from 1 (best speed) and 9 (best compression). 6 is the default.
-
-## TODO
-
-* Add an option to not add empty directories if there are no valid children inside
+* `omitEmptyDirs` Prevents empty directories from being included in the zip file. If the root folder to pack is empty, the whole operation will fail.
+* `allowEmptyRoot` Lets the empty root directory be included in the zip file, if the`omitEmptyDirs` is set to `true`.
 
 ## license
 
