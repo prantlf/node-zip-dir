@@ -1,6 +1,6 @@
 {
-  "name": "@prantlf/node-zip-dir",
-  "version": "0.0.0-development",
+  "name": "@prantlf/zip-dir",
+  "version": "1.0.0",
   "description": "Zips up a directory and saves the zip archive to disk or returns as a buffer.",
   "homepage": "https://github.com/prantlf/node-zip-dir",
   "author": {
