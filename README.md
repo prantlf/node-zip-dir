@@ -1,5 +1,5 @@
 # zip-dir
-[![NPM version](https://badge.fury.io/js/%40prantlf%2Fastrobench.png)](http://badge.fury.io/js/%40prantlf%2Fastrobench)
+[![NPM version](https://badge.fury.io/js/%40prantlf%2Fzip-dir.png)](http://badge.fury.io/js/%40prantlf%2Fzip-dir)
 [![Build Status](https://travis-ci.org/prantlf/node-zip-dir.png)](https://travis-ci.org/prantlf/node-zip-dir)
 [![codecov](https://codecov.io/gh/prantlf/node-zip-dir/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/node-zip-dir)
 [![Dependency Status](https://david-dm.org/prantlf/node-zip-dir.svg)](https://david-dm.org/prantlf/node-zip-dir)
